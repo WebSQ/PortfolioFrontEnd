@@ -1,0 +1,858 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Porfolio Web</title>
+    <!-- BOOTSTRAP CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <!--FONT AWESOME-->
+    <script src="https://kit.fontawesome.com/36335fbf54.js" crossorigin="anonymous"></script>
+    <!--CUSTOM CSS-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/main.css">
+
+</head>
+<body>
+    <!--CONTENT-->
+    <header>        
+        <nav class="navbar" style="background-color: #052a7aea;">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="#">
+                <img src="img/logoap.png" alt="" width="200" height="100" class="d-inline-block align-text-top"> 
+              </a>
+              <h1>#YoProgramo</h1>
+              <i class="fa-solid fa-user"></i>
+              <h1>Sintia Margarita Quispe Camacho</h1>
+    
+                <div class="social">
+                    <ul>
+                        <a href="#" target="_blank"><span class="fa fa-facebook"></span></a>
+                        <a href="#" target="_blank"><span class="fa fa-instagram"></span></a>
+                        <a href="#" target="_blank"><span class="fa fa-youtube-play"></span></a>
+                        <a href="#" target="_blank"><span class="fa fa-linkedin"></span></a>
+                        <a href="#" target="_blank"><span class="fa fa-twitter"></span></a>
+                        <a href="#" target="_blank"><span class="fa-solid fa-envelope"></span></a>
+                    </ul> 
+                </div>
+                <label class="switch">
+                    <input type="checkbox" id="slider" checked>
+                    <span class="slider"></span>
+                    <span><i class="fa-solid fa-sun"></i></span>
+                    <span><i class="fa-solid fa-moon"></i></span>
+                </label> 
+            </div>
+        </nav>        
+    </header>
+   
+    <div class="contenedor-formulario contenedor">
+        <div class="imagen-formulario">
+           <img src="img">
+        </div>
+        <form class="formulario">
+            <div class="texto-formulario">
+                <h2>Bienvenido</h2>
+                <p>Inicia sesión con tu cuenta</p>
+            </div>
+            <div class="input">
+                <label for="usuario">Usuario</label>
+                <input placeholder="Ingrese su usuario" type="text" id="usuario">
+            </div>
+            <div class="input">
+                <label for="contraseña">Contraseña</label>
+                <input placeholder="Ingresa tu contraseña" type="password" id="contraseña">
+            </div>
+            <div class="password-olvidada">
+                <a href="#">¿Olvidaste tu contraseña?</a>
+            </div>
+            <div class="input">
+                <input type="submit" value="Login">
+            </div>
+        </form>
+    </div>
+
+
+    <div class="card mat-card" id="first-card">
+       
+        <div id="info" style="padding: 16px"> 
+            <div id="info-img">
+                <img class="profile-image" src="img/profilesmqc.png">
+                
+            </div>
+            <div id="btn-iconos" style="text-align: center;">
+                <ul>
+                    <div class="btn-edit" onclick="cambiar_parrafo()">
+                        <a href="#" class="btn-right"><i class="fa-solid fa-repeat"></i><p>Actualizar</p>
+                    </div>
+                    <div class="btn-edit" onclick="cambiar_parrafo()">
+                        <a href="#" class="btn-right"><i class="fa-sharp fa-solid fa-file-export"></i><p>Exportar</p>
+                    </div>
+                    <div class="btn-edit" onclick="cambiar_parrafo()">
+                        <a href="#" class="btn-right"><i class="fa-solid fa-trash-can"></i><p>Eliminar</p>
+                    </div>
+                    <div class="btn-edit" onclick="cambiar_parrafo()">
+                        <a href="#" class="btn-right"><i class="fa-solid fa-cloud-arrow-up"></i><p>Importar</p>
+                    </div>
+                    <div class="btn-edit" onclick="cambiar_parrafo()">
+                        <a href="#" class="btn-right"><i class="fa-sharp fa-solid fa-pen-to-square"></i><p>Editar</p>
+                    </div>
+                    <div class="btn-edit" onclick="cambiar_parrafo()">
+                        <a href="#" class="btn-right"><i class="fa-sharp fa-solid fa-plus"></i><p>Agregar</p>
+                    </div>                                    
+                </ul>
+            </div>
+            <div id="info-data">
+                <div class="datos">
+                    <h1><strong>Sintia Margarita Quispe Camacho</strong></hi>
+                    <div id="info-company">Contadora en QC Consultores</div>
+                    <div id="info-contact">
+                        <span>Buenos Aires (Argentina)</span>
+                        <span><a href="#">Información de contacto</a></span>
+                    </div>
+                </div>
+            </div>
+            <div id="info-actions">
+                <botton type="button" class="btn btn-primary">Tengo interés en</botton>
+                <botton type="button" class="btn btn-success">Añadir Sección</botton>
+                <botton type="button" class="btn btn-outline-success me-2">Más</botton>
+            </div>
+            </div>
+        </div>  
+    </div>
+    <div class="card mat-card">
+        <div class="iconos" style="text-align: center;">
+            <i class="fa-regular fa-id-card"></i>               
+        </div>
+        
+        <div class="card-titles">
+            <h2><strong>Acerca de mí</strong></h2>
+            <div class="btn-edit" onclick="cambiar_parrafo()"></div>
+        </div>
+            <div id="btn-iconos" style="text-align: center;">
+                <ul>
+                    <div class="btn-edit" onclick="cambiar_parrafo()">
+                        <a href="#" class="btn-right"><i class="fa-solid fa-repeat"></i><p>Actualizar</p>
+                    </div>
+                    <div class="btn-edit" onclick="cambiar_parrafo()">
+                        <a href="#" class="btn-right"><i class="fa-sharp fa-solid fa-file-export"></i><p>Exportar</p>
+                    </div>
+                    <div class="btn-edit" onclick="cambiar_parrafo()">
+                        <a href="#" class="btn-right"><i class="fa-solid fa-trash-can"></i><p>Eliminar</p>
+                    </div>
+                    <div class="btn-edit" onclick="cambiar_parrafo()">
+                        <a href="#" class="btn-right"><i class="fa-solid fa-cloud-arrow-up"></i><p>Importar</p>
+                    </div>
+                    <div class="btn-edit" onclick="cambiar_parrafo()">
+                        <a href="#" class="btn-right"><i class="fa-sharp fa-solid fa-pen-to-square"></i><p>Editar</p>
+                    </div>
+                    <div class="btn-edit" onclick="cambiar_parrafo()">
+                        <a href="#" class="btn-right"><i class="fa-sharp fa-solid fa-plus"></i><p>Agregar</p>
+                    </div>                                    
+                </ul>
+            </div>
+        <div>
+            <p id="text-acercade">Estoy aprendiendo la habilidad de programar para aportar conocimiento y experiencia empresarial a las empresas, para el manejo de grandes volumenes de datos e información valiosa para mejorar en la toma de decisiones, en pos de lograr su misión e integrar su organización a la nueva economía del conocimiento.</p>
+        </div>
+        <div>
+            <input id="edit-acercade" type="text" oninput="myFunction2(this.value)" style="display:none"
+            style="display:none" type="text"></input>
+            <input type="file" id="file1" onchange="showFile(this)">
+      </div>
+    </div>
+
+    <div class="card mat-card">
+        <div id="experience" style="text-align: center;">
+            <div class="iconos">
+                <i class="fa-solid fa-business-time"></i>              
+            </div>
+            <div class="card-tiles">
+            <h2 class="section-heading"><strong>Experiencia</strong></h2>              
+            </div>
+        </div>        
+        <ul class="items-list">
+            <div id="btn-iconos" style="text-align: center;">
+                <ul>
+                    <div class="btn-edit" onclick="cambiar_parrafo()">
+                        <a href="#" class="btn-right"><i class="fa-solid fa-repeat"></i><p>Actualizar</p>
+                    </div>
+                    <div class="btn-edit" onclick="cambiar_parrafo()">
+                        <a href="#" class="btn-right"><i class="fa-sharp fa-solid fa-file-export"></i><p>Exportar</p>
+                    </div>
+                    <div class="btn-edit" onclick="cambiar_parrafo()">
+                        <a href="#" class="btn-right"><i class="fa-solid fa-trash-can"></i><p>Eliminar</p>
+                    </div>
+                    <div class="btn-edit" onclick="cambiar_parrafo()">
+                        <a href="#" class="btn-right"><i class="fa-solid fa-cloud-arrow-up"></i><p>Importar</p>
+                    </div>
+                    <div class="btn-edit" onclick="cambiar_parrafo()">
+                        <a href="#" class="btn-right"><i class="fa-sharp fa-solid fa-pen-to-square"></i><p>Editar</p>
+                    </div>
+                    <div class="btn-edit" onclick="cambiar_parrafo()">
+                        <a href="#" class="btn-right"><i class="fa-sharp fa-solid fa-plus"></i><p>Agregar</p>
+                    </div>                                    
+                </ul>  
+            </div>        
+            <li>
+                <div class="data-container">
+                    <a href="#">
+                        <div class="logo-image-container">
+                            <img
+                            class="logo-image"
+                            src="img/logoqcc.png"                   
+                            />
+                        </div>
+                        <div class="list-info">
+                            <h3><strong>Contadora Pública</strong></h3>
+                            <p>QC Consultores - <span>Jornada Parcial</span></p>
+                            <h4>enero-2017 a la actualidad</h4>
+                            <h4>Tristán Suárez, Buenos Aires, Argentina</h4>
+                        </div>
+                    </a>
+                </div>          
+            </li>
+        </ul>        
+        <ul class="items-list">
+            <div id="btn-iconos" style="text-align: center;">
+                <ul>
+                    <div class="btn-edit" onclick="cambiar_parrafo()">
+                        <a href="#" class="btn-right"><i class="fa-solid fa-repeat"></i><p>Actualizar</p>
+                    </div>
+                    <div class="btn-edit" onclick="cambiar_parrafo()">
+                        <a href="#" class="btn-right"><i class="fa-sharp fa-solid fa-file-export"></i><p>Exportar</p>
+                    </div>
+                    <div class="btn-edit" onclick="cambiar_parrafo()">
+                        <a href="#" class="btn-right"><i class="fa-solid fa-trash-can"></i><p>Eliminar</p>
+                    </div>
+                    <div class="btn-edit" onclick="cambiar_parrafo()">
+                        <a href="#" class="btn-right"><i class="fa-solid fa-cloud-arrow-up"></i><p>Importar</p>
+                    </div>
+                    <div class="btn-edit" onclick="cambiar_parrafo()">
+                        <a href="#" class="btn-right"><i class="fa-sharp fa-solid fa-pen-to-square"></i><p>Editar</p>
+                    </div>
+                    <div class="btn-edit" onclick="cambiar_parrafo()">
+                        <a href="#" class="btn-right"><i class="fa-sharp fa-solid fa-plus"></i><p>Agregar</p>
+                    </div>                                    
+                </ul>  
+            </div>    
+            <li>
+                <div class="data-container">
+                    <a href="#">
+                        <div class="logo-image-container">
+                            <img
+                            class="logo-image"
+                            src="img/logocs.png"                   
+                            />
+                        </div>
+                        <div class="list-info">
+                            <h3><strong>Pago a proveedores</strong></h3>
+                            <p>Canning Star SRL - <span>Jornada Parcial</span></p>
+                            <h4>enero-2018 a junio-2018</h4>
+                            <h4>Canning, Buenos Aires, Argentina</h4>
+                        </div>
+                    </a>
+                </div>
+            </li>
+        </ul>
+        <ul class="items-list">
+            <div id="btn-iconos" style="text-align: center;">
+                <ul>
+                    <div class="btn-edit" onclick="cambiar_parrafo()">
+                        <a href="#" class="btn-right"><i class="fa-solid fa-repeat"></i><p>Actualizar</p>
+                    </div>
+                    <div class="btn-edit" onclick="cambiar_parrafo()">
+                        <a href="#" class="btn-right"><i class="fa-sharp fa-solid fa-file-export"></i><p>Exportar</p>
+                    </div>
+                    <div class="btn-edit" onclick="cambiar_parrafo()">
+                        <a href="#" class="btn-right"><i class="fa-solid fa-trash-can"></i><p>Eliminar</p>
+                    </div>
+                    <div class="btn-edit" onclick="cambiar_parrafo()">
+                        <a href="#" class="btn-right"><i class="fa-solid fa-cloud-arrow-up"></i><p>Importar</p>
+                    </div>
+                    <div class="btn-edit" onclick="cambiar_parrafo()">
+                        <a href="#" class="btn-right"><i class="fa-sharp fa-solid fa-pen-to-square"></i><p>Editar</p>
+                    </div>
+                    <div class="btn-edit" onclick="cambiar_parrafo()">
+                        <a href="#" class="btn-right"><i class="fa-sharp fa-solid fa-plus"></i><p>Agregar</p>
+                    </div>                                    
+                </ul>  
+            </div>    
+            <li>
+                <div class="data-container">
+                    <a href="https://w-gregorutti.com.ar/">
+                        <div class="logo-image-container">
+                            <img
+                            class="logo-image"
+                            src="img/logowgsa.png"                   
+                            />
+                        </div>
+                        <div class="list-info">
+                            <h3><strong>Contabilidad e Impuestos</strong></h3>
+                            <p>Walter Gregorutti SA - <span>Jornada Completa</span></p>
+                            <h4>enero-2017 a agosto-2017</h4>
+                            <h4>Lanús Este, Buenos Aires, Argentina</h4>                           
+                        </div>
+                    </a>
+                </div>
+            </li>
+        </ul>
+    </div>
+
+    <div class="card mat-card">
+        <div id="education" style="text-align: center;">
+            <div class="iconos">
+                <i class="fa-solid fa-school-flag"></i>               
+            </div>
+            <div class="card-tiles">
+                <h2 class="section-heading"><strong>Educación</strong></h2>                
+            </div>
+        </div>    
+        <ul class="items-list">
+            <div id="btn-iconos" style="text-align: center;">
+                <ul>
+                    <div class="btn-edit" onclick="cambiar_parrafo()">
+                        <a href="#" class="btn-right"><i class="fa-solid fa-repeat"></i><p>Actualizar</p>
+                    </div>
+                    <div class="btn-edit" onclick="cambiar_parrafo()">
+                        <a href="#" class="btn-right"><i class="fa-sharp fa-solid fa-file-export"></i><p>Exportar</p>
+                    </div>
+                    <div class="btn-edit" onclick="cambiar_parrafo()">
+                        <a href="#" class="btn-right"><i class="fa-solid fa-trash-can"></i><p>Eliminar</p>
+                    </div>
+                    <div class="btn-edit" onclick="cambiar_parrafo()">
+                        <a href="#" class="btn-right"><i class="fa-solid fa-cloud-arrow-up"></i><p>Importar</p>
+                    </div>
+                    <div class="btn-edit" onclick="cambiar_parrafo()">
+                        <a href="#" class="btn-right"><i class="fa-sharp fa-solid fa-pen-to-square"></i><p>Editar</p>
+                    </div>
+                    <div class="btn-edit" onclick="cambiar_parrafo()">
+                        <a href="#" class="btn-right"><i class="fa-sharp fa-solid fa-plus"></i><p>Agregar</p>
+                    </div>                                    
+                </ul>  
+            </div>    
+            <li>
+                <div class="data-container">
+                    <a href="https://www.argentina.gob.ar/produccion/transformacion-digital-y-economia-del-conocimiento/argentina-programa">
+                        <div class="logo-image-container">
+                            <img
+                            class="logo-image"
+                            src="img/logoap.png"                   
+                            />
+                        </div>
+                        <div class="list-info">
+                            <h3><strong>Programador web full-stack junior</strong></h3>
+                            <p>Plan Argentina Programa</p>
+                            <h4>marzo-2022 a la actualidad</h4>
+                            <h4>Plataforma virtual, Buenos Aires, Argentina</h4>
+                        </div>
+                    </a>
+                </div>          
+            </li>
+        </ul>         
+        <ul class="items-list">
+            <div id="btn-iconos" style="text-align: center;">
+                <ul>
+                    <div class="btn-edit" onclick="cambiar_parrafo()">
+                        <a href="#" class="btn-right"><i class="fa-solid fa-repeat"></i><p>Actualizar</p>
+                    </div>
+                    <div class="btn-edit" onclick="cambiar_parrafo()">
+                        <a href="#" class="btn-right"><i class="fa-sharp fa-solid fa-file-export"></i><p>Exportar</p>
+                    </div>
+                    <div class="btn-edit" onclick="cambiar_parrafo()">
+                        <a href="#" class="btn-right"><i class="fa-solid fa-trash-can"></i><p>Eliminar</p>
+                    </div>
+                    <div class="btn-edit" onclick="cambiar_parrafo()">
+                        <a href="#" class="btn-right"><i class="fa-solid fa-cloud-arrow-up"></i><p>Importar</p>
+                    </div>
+                    <div class="btn-edit" onclick="cambiar_parrafo()">
+                        <a href="#" class="btn-right"><i class="fa-sharp fa-solid fa-pen-to-square"></i><p>Editar</p>
+                    </div>
+                    <div class="btn-edit" onclick="cambiar_parrafo()">
+                        <a href="#" class="btn-right"><i class="fa-sharp fa-solid fa-plus"></i><p>Agregar</p>
+                    </div>                                    
+                </ul>  
+            </div>    
+            <li>
+                <div class="data-container">
+                    <a href="http://www.economicas.unlz.edu.ar/">
+                        <div class="logo-image-container">
+                            <img
+                            class="logo-image"
+                            src="img/logofce.png"                   
+                            />
+                        </div>
+                        <div class="list-info">
+                            <h3><strong>Contador Público</strong></h3>
+                            <p>Universidad Nacional de Lomas de Zamora - <span>Facultad de Ciencias Económicas</span></p>
+                            <h4>febrero-2012 a diciembre-2016</h4>
+                            <h4>Lomas de Zamora, Buenos Aires, Argentina</h4>
+                        </div>
+                    </a>
+                </div>
+            </li>
+        </ul>
+        <ul class="items-list">
+            <div id="btn-iconos" style="text-align: center;">
+                <ul>
+                    <div class="btn-edit" onclick="cambiar_parrafo()">
+                        <a href="#" class="btn-right"><i class="fa-solid fa-repeat"></i><p>Actualizar</p>
+                    </div>
+                    <div class="btn-edit" onclick="cambiar_parrafo()">
+                        <a href="#" class="btn-right"><i class="fa-sharp fa-solid fa-file-export"></i><p>Exportar</p>
+                    </div>
+                    <div class="btn-edit" onclick="cambiar_parrafo()">
+                        <a href="#" class="btn-right"><i class="fa-solid fa-trash-can"></i><p>Eliminar</p>
+                    </div>
+                    <div class="btn-edit" onclick="cambiar_parrafo()">
+                        <a href="#" class="btn-right"><i class="fa-solid fa-cloud-arrow-up"></i><p>Importar</p>
+                    </div>
+                    <div class="btn-edit" onclick="cambiar_parrafo()">
+                        <a href="#" class="btn-right"><i class="fa-sharp fa-solid fa-pen-to-square"></i><p>Editar</p>
+                    </div>
+                    <div class="btn-edit" onclick="cambiar_parrafo()">
+                        <a href="#" class="btn-right"><i class="fa-sharp fa-solid fa-plus"></i><p>Agregar</p>
+                    </div>                                    
+                </ul>  
+            </div>    
+            <li>
+                <div class="data-container">
+                    <a href="#">
+                        <div class="logo-image-container">
+                            <img
+                            class="logo-image"
+                            src="img/logoees.png"                   
+                            />
+                        </div>
+                        <div class="list-info">
+                            <h3><strong>Bachiller Económia y Gestión de las Organizaciones</strong></h3>
+                            <p>Escuela de Educación Secundaria N°3</p>
+                            <p><time>2009</time>-<time>2011</time></p>
+                            <h4>Tristán Suárez, Buenos Aires, Argentina</h4>                           
+                        </div>
+                    </a>
+                </div>
+            </li>
+        </ul>
+    </div>
+  <section id="skills">
+    <div class="habilidades">   
+        <div class="container" style="text-align: center;">
+            <div class="iconos">
+                <i class="fa-solid fa-handshake"></i>              
+            </div>         
+            <h1 class="section-heading">Skills</h1>  
+        <div>
+            <div id="btn-iconos" style="text-align: center;">
+                <ul>
+                    <div class="btn-edit" onclick="cambiar_parrafo()">
+                        <a href="#" class="btn-right"><i class="fa-solid fa-repeat"></i><p>Actualizar</p>
+                    </div>
+                    <div class="btn-edit" onclick="cambiar_parrafo()">
+                        <a href="#" class="btn-right"><i class="fa-sharp fa-solid fa-file-export"></i><p>Exportar</p>
+                    </div>
+                    <div class="btn-edit" onclick="cambiar_parrafo()">
+                        <a href="#" class="btn-right"><i class="fa-solid fa-trash-can"></i><p>Eliminar</p>
+                    </div>
+                    <div class="btn-edit" onclick="cambiar_parrafo()">
+                        <a href="#" class="btn-right"><i class="fa-solid fa-cloud-arrow-up"></i><p>Importar</p>
+                    </div>
+                    <div class="btn-edit" onclick="cambiar_parrafo()">
+                        <a href="#" class="btn-right"><i class="fa-sharp fa-solid fa-pen-to-square"></i><p>Editar</p>
+                    </div>
+                    <div class="btn-edit" onclick="cambiar_parrafo()">
+                        <a href="#" class="btn-right"><i class="fa-sharp fa-solid fa-plus"></i><p>Agregar</p>
+                    </div>                                    
+                </ul>
+            </div>
+        
+        <div class="container">       
+            </div>
+                <div class="container">
+                    <div class="progress_container">
+                        <div class="box">
+                        <img src="img/softskills.png" alt="Soft Skills" />
+                        <h5 class="item-heading">Soft Skills</h5>
+                        </div>
+                        <div class="box">
+                        <div class="skill">
+                            <svg>
+                                <circle cx="100" cy="100" r="70"></circle>
+                                <circle
+                                    cx="100"
+                                    cy="100"
+                                    r="70"
+                                    class="progress"
+                                    data-value="90"
+                                    data-stroke="#139c3c"
+                                    data-time="90"
+                                ></circle>
+                            </svg>
+                            <span class="data-progress" data-value="90"></span>
+                        </div>
+                        <strong>Trabajo en equipo</strong>
+                            <div class="iconos">
+                                <i class="fa-solid fa-users-line"></i>              
+                            </div>
+                        </div>
+                        <div class="box">
+                        <div class="skill">
+                            <svg>
+                                <circle cx="100" cy="100" r="70"></circle>
+                                    <circle
+                                        cx="100"
+                                        cy="100"
+                                        r="70"
+                                        class="progress"
+                                        data-value="80"
+                                        data-stroke="#139c3c"
+                                        data-time="80"
+                                    ></circle>
+                            </svg>
+                            <span class="data-progress" data-value="80"></span>
+                        </div>
+                        <strong>Integridad</strong>
+                            <div class="iconos">
+                                <i class="fa-solid fa-business-time"></i>               
+                            </div>
+                        </div>
+                        <div class="box">
+                        <div class="skill">
+                            <svg>
+                            <circle cx="100" cy="100" r="70"></circle>
+                                <circle
+                                    cx="100"
+                                    cy="100"
+                                    r="70"
+                                    class="progress"
+                                    data-value="70"
+                                    data-stroke="#139c3c"
+                                    data-time="70"
+                                ></circle>
+                            </svg>
+                            <span class="data-progress" data-value="70"></span>
+                        </div>
+                        <strong>Resiliencia</strong>
+                            <div class="iconos">
+                                <i class="fa-solid fa-person-walking-arrow-right"></i>              
+                            </div>
+                        </div>
+                    </div> 
+                    <div class="progress_container">
+                        <div class="box">
+                            <img src="img/datascience.jpg" alt="App" />
+                            <h5 class="item-heading">Hard Skills en formación</h5>
+                        </div>
+                        
+                        <div class="box">
+                            <div class="skill">
+                                <svg>
+                                    <circle cx="100" cy="100" r="70"></circle>
+                                    <circle
+                                        cx="100"
+                                        cy="100"
+                                        r="70"
+                                        class="progress"
+                                        data-value="70"
+                                        data-stroke="#A20DF1"
+                                        data-time="70"
+                                    ></circle>                    
+                                </svg>
+                                <span class="data-progress" data-value="70"></span>
+                            </div>
+                            <strong>GitHub</strong>
+                                <div class="iconos">
+                                    <i class="fa-brands fa-github"></i>              
+                                </div>
+                            </div>
+                        <div class="box">
+                            <div class="skill">
+                                <svg>
+                                    <circle cx="100" cy="100" r="70"></circle>
+                                    <circle
+                                        cx="100"
+                                        cy="100"
+                                        r="70"
+                                        class="progress"
+                                        data-value="80"
+                                        data-stroke="#ff8000"
+                                        data-time="80"
+                                    ></circle>
+                                </svg>
+                                <span class="data-progress" data-value="80"></span>
+                            </div>
+                            <strong>HTML</strong>
+                                <div class="iconos">
+                                    <i class="fa-brands fa-html5"></i>               
+                                </div>
+                            </div>
+                        <div class="box">
+                            <div class="skill">
+                                <svg>
+                                    <circle cx="100" cy="100" r="70"></circle>
+                                    <circle
+                                        cx="100"
+                                        cy="100"
+                                        r="70"
+                                        class="progress"
+                                        data-value="80"
+                                        data-stroke="#3380FF"
+                                        data-time="60"
+                                    ></circle>                   
+                                </svg>
+                                <span class="data-progress" data-value="80"></span>
+                            </div>
+                            <strong>CSS</strong>
+                                <div class="iconos">
+                                    <i class="fa-brands fa-css3-alt"></i>               
+                                </div>
+                            </div>
+                        <div class="box">
+                                <div class="skill">
+                                    <svg>
+                                        <circle cx="100" cy="100" r="70"></circle>
+                                        <circle
+                                            cx="100"
+                                            cy="100"
+                                            r="70"
+                                            class="progress"
+                                            data-value="70"
+                                            data-stroke="#F9FF33"
+                                            data-time="60"
+                                        ></circle>                   
+                                    </svg>
+                                    <span class="data-progress" data-value="70"></span>
+                                </div>
+                                <strong>JavaScript</strong>
+                                    <div class="iconos">
+                                        <i class="fa-brands fa-js"></i>    
+                                    </div>
+                                </div>                    
+                    </div> 
+                    <div class="progress_container">
+                        <div class="box">
+                        <img src="img/hardskillsds.jpg" alt="App" />
+                        <h5 class="item-heading">Hard Skills por experiencia</h5>
+                        </div>
+                        <div class="box">
+                        <div class="skill">
+                            <svg>
+                                <circle cx="100" cy="100" r="70"></circle>
+                                <circle
+                                    cx="100"
+                                    cy="100"
+                                    r="70"
+                                    class="progress"
+                                    data-value="100"
+                                    data-stroke="#1090f8"
+                                    data-time="100"
+                                ></circle>
+                            </svg>
+                            <span class="data-progress" data-value="100"></span>
+                        </div>
+                        <strong>Contabilidad</strong>
+                            <div class="iconos">
+                                <i class="fa-solid fa-file-circle-check"></i>              
+                            </div>
+                        </div>
+                        <div class="box">
+                        <div class="skill">
+                            <svg>
+                                <circle cx="100" cy="100" r="70"></circle>
+                                <circle
+                                    cx="100"
+                                    cy="100"
+                                    r="70"
+                                    class="progress"
+                                    data-value="100"
+                                    data-stroke="#1090f8"
+                                    data-time="100"
+                                ></circle>
+                            </svg>
+                            <span class="data-progress" data-value="100"></span>
+                        </div>
+                        <strong>Impuestos</strong>
+                            <div class="iconos">
+                                <i class="fa-sharp fa-solid fa-file-invoice-dollar"></i>               
+                            </div>
+                        </div>
+                        <div class="box">
+                        <div class="skill">
+                            <svg>
+                            <circle cx="100" cy="100" r="70"></circle>
+                                <circle
+                                    cx="100"
+                                    cy="100"
+                                    r="70"
+                                    class="progress"
+                                    data-value="100"
+                                    data-stroke="#1090f8"
+                                    data-time="100"
+                                ></circle>
+                            </svg>
+                            <span class="data-progress" data-value="100"></span>
+                        </div>
+                        <strong>RRHH</strong>
+                            <div class="iconos">
+                                <i class="fa-solid fa-users-gear"></i>              
+                            </div>
+                        </div>
+                        <div class="box">
+                            <div class="skill">
+                                <svg>
+                                <circle cx="100" cy="100" r="70"></circle>
+                                    <circle
+                                        cx="100"
+                                        cy="100"
+                                        r="70"
+                                        class="progress"
+                                        data-value="100"
+                                        data-stroke="#1090f8"
+                                        data-time="100"
+                                    ></circle>
+                                </svg>
+                                <span class="data-progress" data-value="100"></span>
+                            </div>
+                            <strong>Societario</strong>
+                                <div class="iconos">
+                                    <i class="fa-sharp fa-solid fa-city"></i>              
+                                </div>
+                        </div>
+                    </div> 
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+  </section>
+  
+    <footer class="pie-pagina">
+        <div class="grupo-1">
+            <div class="box">
+                <figure>
+                <img src="img/logoqcsd.png" alt="Logo de SQSouthData">
+                </figure>
+            </div>
+            <div class="box">
+                <h2>Sobre Nosotros</h2>
+                <p>Simplemente para un mejor mundo digital, con la misión de llevar cada proyecto al éxito.</p>
+            </div>
+            <div class="box">
+                <h2>Seguinos</h2>
+                <div class="red-social">
+                    <a href="#" class="fa fa-facebook"></a>
+                    <a href="#" class="fa fa-instagram"></a>
+                    <a href="#" class="fa fa-youtube-play"></a>
+                    <a href="#" class="fa fa-linkedin"></a>
+                    <a href="#" class="fa fa-twitter"></a>
+                </div>
+            </div>
+        </div>
+        <div class="grupo-2">
+            <small>&copy;2022 <b>SQSouthData</b> | Todos los derechos reservados | Términos y condiciones | Protección de datos</small>
+        </div>
+    </footer>
+    
+    <!-- BOOTSTRAP JAVASCRIPT -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+    <script src=".js"></script>
+    <script>
+
+        //Modo oscuro o claro
+        const preferedColorScheme = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+        const slider = document.getElementById('slider');
+
+        const setTheme = (theme) => {
+            document.documentElement.setAttribute('data-theme', theme);
+            localStorage.setItem('theme', theme);
+        }
+
+        slider.addEventListener('click', ()  => {
+            let switchToTheme = localStorage.getItem('theme') === 'dark' ? 'light' : 'dark';
+            setTheme(switchToTheme);
+        });
+
+        setTheme(localStorage.getItem('theme') || preferedColorScheme);
+
+                // funcion que cambia el estilo del input a visible
+                // toma el valor del texto del parrafo con id "text-acercade"
+                // lo muestra en consola
+            
+                function cambiar_parrafo(){
+                    document.getElementById("edit-acercade").style.display="block";
+                    let texto = document.getElementById("text-acercade").innerText;
+                    console.log(texto);
+                };
+            
+                function myFunction2(valor){
+                    document.getElementById("text-acercade").innerText=valor;
+                };
+            
+                function logMessage(message) {
+                    console.log(mesagge + "<br>");
+                }
+            
+                //controla si se presiona un enter
+            
+                let textarea=document.getElementById("edit-acercade")
+            
+                textarea.addEventListener('keyup', (e) => {
+                    logMessage(`Key "${e.key}" released [event: keyup]`);
+                    if (e.key=="Enter") {
+                        document.getElementById("edit-acercade").style.display="none"
+                    }
+                });
+            
+                // carga el contenido de un archivo de texto
+                // y lo muestra en el parrafo
+            
+                function showFile(input) {
+                    let file = input.files[0];
+                    alert(`File name: ${file.name}`); // e.g my.png
+                    alert(`Last modified: ${file.lastModified}`); // e.g 1552830408824
+
+                    let reader = new FileReader();
+                    reader.readAsText(file);
+                    reader.onload = function(){
+                        console.log(reader.result);
+                        document.getElementById("text-acercade").innerText=reader.result;
+                    };
+                    reader.onerror = function(){
+                        console.log(reader.error);
+                    };
+                }
+            
+            // progresos de skills
+            
+        let progress = document.querySelectorAll('.progress');
+        let progress_text = document.querySelectorAll('.data-progress');
+
+        progress.forEach((pro) => {
+        let percentage = pro.getAttribute('data-value');
+        let color = pro.getAttribute('data-stroke');
+        let animateTime = pro.getAttribute('data-time');
+        let radius = pro.r.baseVal.value;
+        let circumference = radius * 2 * Math.PI;
+        let stroke = circumference - (circumference * percentage) / 100;
+        pro.style.setProperty('--stroke-dashoffset', stroke);
+        pro.style.setProperty('--stroke-dasharray', circumference);
+        pro.style.setProperty('--stroke', color);
+        pro.style.setProperty('--animation-time', `${animateTime * 100}ms`);
+        })
+
+        progress_text.forEach((text) => {
+        let data = text.getAttribute('data-value');
+        let progress_value = 0;
+        let progress_bar = setInterval(() => {
+            progress_value++;
+            text.innerText = `${progress_value}%`;
+            if (progress_value == data) {
+            clearInterval(progress_bar);
+            }
+        }, 100);
+        })
+
+    </script>  
+</body>
+</html>
